@@ -15,7 +15,7 @@ vehiculo1.acelerar(140);
 vehiculo1.arrancar();
 vehiculo1.frenar();
 
-const vehiculo1Object = {
+/*const vehiculo1Object = {
     marca: 'BMW',
     modelo: 'CLK',
     color: 'rojo',
@@ -27,12 +27,12 @@ localStorage.setItem("vehiculo", JSON.stringify(vehiculo1Object));
 
 console.log(JSON.parse(vehiculo1Object));
 
-console.log(localStorage.getItem("vehiculo"));
+console.log(localStorage.getItem("vehiculo"));*/
 
 const deportivo1 = new Deportivo('Ferrari', 'Spider', 'amarillo', 2020, '4000', 500);
 mostrarResultado("<br/>--Deportivo Ferrari--");
 deportivo1.mostrarDatos();
-mostrarResultado("<br/> Potencia de motor: " + deportivo1.potenciaMotor)
+mostrarResultado("Potencia de motor: " + deportivo1.potenciaMotor)
 deportivo1.acelerar(140);
 deportivo1.arrancar();
 deportivo1.frenar();
