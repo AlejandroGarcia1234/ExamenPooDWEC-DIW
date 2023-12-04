@@ -3,21 +3,21 @@
 import { Vehiculo } from "./vehiculo.js";
 import { Deportivo } from "./deportivo.js";
 
-const resultadoContainer = document.createElement('div');
+const resultadoContainer = document.createElement('div'); //Creamos el div en el que se mostrará nuestro proyecto realizado en los scripts
 document.body.appendChild(resultadoContainer);
 
 export function mostrarResultado(mensaje){
     resultadoContainer.innerHTML += `<p>${mensaje}</p>`
 }
 
-const vehiculo1 = new Vehiculo('BMW', 'CLK', 'rojo', 1992, '2400');
+const vehiculo1 = new Vehiculo('BMW', 'CLK', 'Rojo', 1992, '2400');
 mostrarResultado('--Vehiculo BMW--');
 vehiculo1.mostrarDatos();
 vehiculo1.acelerar(140);
 vehiculo1.arrancar();
 vehiculo1.frenar();
 
-const vehiculo1Object = {
+const vehiculoObject = {
     marca: 'BMW',
     modelo: 'CLK',
     color: 'rojo',
@@ -25,16 +25,16 @@ const vehiculo1Object = {
     cilindrada: '2400'
 }
 
-localStorage.setItem("vehiculo", JSON.stringify(vehiculo1Object));
+localStorage.setItem("vehiculo", JSON.stringify(vehiculoObject));
 
 console.log(JSON.parse(localStorage.getItem("vehiculo")));
 
 console.log(localStorage.getItem("vehiculo"));
 
-const deportivo1 = new Deportivo('Ferrari', 'Spider', 'amarillo', 2020, '4000', 500);
+const deportivo1 = new Deportivo('Ferrari', 'Spider', 'Amarillo', 2020, '4000', 500);
 mostrarResultado('<br/>--Deportivo Ferrari--');
 deportivo1.mostrarDatos();
-mostrarResultado("Potencia de motor: " + deportivo1.potenciaMotor) //Vemos que para que se muestre el valor hay que llamar al atributo que declaramos en la clase deportivo (potenciaMotor)
+mostrarResultado("Potencia de motor en caballos: " + deportivo1.potenciaMotor) //Vemos que para que se muestre el valor hay que llamar al atributo que declaramos en la clase deportivo (potenciaMotor)
 deportivo1.acelerar(140);
 deportivo1.arrancar();
 deportivo1.frenar();
@@ -52,11 +52,11 @@ for(let key in deportivoObject){
     if(deportivoObject.hasOwnProperty(key)){
         localStorage.setItem(key, deportivoObject[key])
     }
-}
+} //Gracias a este bucle almacenamos cada propiedad del objeto deportivoObject a las que les asignamos una key identificativa
 
-localStorage.removeItem('modelo');
+localStorage.removeItem('modelo'); //Gracias al removeItem podemos eliminar la propiedad que queramos del localStorage
 
 localStorage.removeItem('color');
 
-localStorage.clear();
+localStorage.clear(); //Con el comando clear eliminamos todos los elementos del localStorage
 

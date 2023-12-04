@@ -48,8 +48,8 @@ export class Vehiculo{
         return this.#marca;
     }
 
-    set marca(value){
-        this.#marca = value;
+    set marca(marca){
+        this.#marca = marca;
     }
 
     get modelo(){
