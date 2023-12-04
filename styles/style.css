@@ -2,14 +2,18 @@
 
 body{
     background-image: url();
+    /*Insteramos la imagen con la url que hayamos elegido*/
     background-size: cover;
+    /*De esta forma hacemos que la imagen cubra toda la pantalla*/
     background-repeat: no-repeat;
+    /*Así conseguimos que no se repita la imagen*/
     background-attachment: fixed;
+    /*Dejamos la imagen fija en la pantalla*/
 }
 
 p{
     color: rgb(104, 22, 139);
-    font-family: ;
+    font-family: '';
 }
 
 .container{
