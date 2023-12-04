@@ -1,4 +1,4 @@
-import { mostrarResultado } from "../scripts/main.js"
+import { mostrarResultado } from "./main.js"
 
 export class Vehiculo{
     #marca

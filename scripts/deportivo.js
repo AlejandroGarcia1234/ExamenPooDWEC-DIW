@@ -1,3 +1,5 @@
+import { Vehiculo } from "./vehiculo.js";
+
 export class Deportivo extends Vehiculo{
     #potenciaMotor
 
