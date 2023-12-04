@@ -11,13 +11,13 @@ export function mostrarResultado(mensaje){
 }
 
 const vehiculo1 = new Vehiculo('BMW', 'CLK', 'rojo', 1992, '2400');
-mostrarResultado("--Vehiculo BMW--");
+mostrarResultado('--Vehiculo BMW--');
 vehiculo1.mostrarDatos();
 vehiculo1.acelerar(140);
 vehiculo1.arrancar();
 vehiculo1.frenar();
 
-/*const vehiculo1Object = {
+const vehiculo1Object = {
     marca: 'BMW',
     modelo: 'CLK',
     color: 'rojo',
@@ -27,12 +27,12 @@ vehiculo1.frenar();
 
 localStorage.setItem("vehiculo", JSON.stringify(vehiculo1Object));
 
-console.log(JSON.parse(vehiculo1Object));
+console.log(JSON.parse(localStorage.getItem("vehiculo")));
 
-console.log(localStorage.getItem("vehiculo"));*/
+console.log(localStorage.getItem("vehiculo"));
 
 const deportivo1 = new Deportivo('Ferrari', 'Spider', 'amarillo', 2020, '4000', 500);
-mostrarResultado("<br/>--Deportivo Ferrari--");
+mostrarResultado('<br/>--Deportivo Ferrari--');
 deportivo1.mostrarDatos();
 mostrarResultado("Potencia de motor: " + deportivo1.potenciaMotor) //Vemos que para que se muestre el valor hay que llamar al atributo que declaramos en la clase deportivo (potenciaMotor)
 deportivo1.acelerar(140);
@@ -57,4 +57,6 @@ for(let key in deportivoObject){
 localStorage.removeItem('modelo');
 
 localStorage.removeItem('color');
+
+localStorage.clear();
 
