@@ -1,11 +1,13 @@
 import { mostrarResultado } from "./main.js"
 
 export class Vehiculo{
-    #marca
+    #marca  
     #modelo
     #color
     #fabricacion
     #cilindrada
+
+    // La # nos indica que estos atributos son privados
 
     constructor(marca, modelo, color, fabricacion, cilindrada){
         this.#marca = marca,
@@ -26,6 +28,7 @@ export class Vehiculo{
         mostrarResultado(`<p>${datos}</p>`)
     }
 
+    //Para el método acelerar, vemos que le pasamos el atributo velocidad, el cual tendremos que darle luego en el main cuando llamemos al método.
     acelerar(velocidad){
         const mensaje = `Se ha alcanzado una velocidad de: ${velocidad}`;
         mostrarResultado(`<p>${mensaje}</p>`);

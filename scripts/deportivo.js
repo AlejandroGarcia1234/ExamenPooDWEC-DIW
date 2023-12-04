@@ -8,6 +8,8 @@ export class Deportivo extends Vehiculo{
         this.#potenciaMotor = potenciaMotor;
     }
 
+    //En este caso vemos como hereda los atributos de la clase Vehiculo con el super(), además de declarar el atributo privado #potenciaMotor solo para la clase deportivo
+
     get potenciaMotor(){
         return this.#potenciaMotor;
     }
