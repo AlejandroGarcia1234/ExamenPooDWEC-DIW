@@ -1,4 +1,4 @@
-## Examen de las asginaturas de DWEC y DIW donde intriducimos la Programación Orientada a Objetos ##
+## Examen de las asginaturas de DWEC y DIW donde introducimos la Programación Orientada a Objetos ##
 
 * scripts
     1. main.js
