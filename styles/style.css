@@ -1,20 +1,29 @@
 @import url();
 
 body{
-    background-image: ;
+    background-image: url();
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.container{
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    max-width: 200%;
+    color: rgb(73, 202, 159);
+    box-shadow: 2px 2px 2px 1px rgb(0, 0, 0, 0.5);
+}
+
+.container :hover{
+    color: blueviolet;
 }
 
 h2{
     font-size: 2rem;
     justify-content: center;
     text-align: center;
-}
-
-.container{
-    border-radius: 10px;
-    max-width: 400%;
-    
+    display: flex;
 }
