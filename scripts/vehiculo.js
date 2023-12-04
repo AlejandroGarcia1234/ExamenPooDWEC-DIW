@@ -1,4 +1,4 @@
-import { mostrarResultado } from "./main"
+import { mostrarResultado } from "../scripts/main.js"
 
 export class Vehiculo{
     #marca
@@ -27,17 +27,18 @@ export class Vehiculo{
     }
 
     acelerar(velocidad){
-        const mensaje = `Se ha alcanzado una velocidad de: ${velocidad}`
-        mostrarResultado(`<p>${mensaje}</p>`)
+        const mensaje = `Se ha alcanzado una velocidad de: ${velocidad}`;
+        mostrarResultado(`<p>${mensaje}</p>`);
     }
 
     arrancar(){
-        const mensaje = `El vehículo ${this.#marca} ha arrancado`
-        mostrarResultado(`<p>${mensaje}</p>`)
+        const mensaje = `El vehículo ${this.#marca} ha arrancado`;
+        mostrarResultado(`<p>${mensaje}</p>`);
     }
 
     frenar(){
-        const mensaje = `El vehículo ${this.#marca} ha frenado`
+        const mensaje = `El vehículo ${this.#marca} ha frenado`;
+        mostrarResultado(`<p>${mensaje}</p>`);
     }
 
     get marca(){
