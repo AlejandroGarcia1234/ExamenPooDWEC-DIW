@@ -1,7 +1,7 @@
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&family=Roboto:wght@500&family=Rubik+Bubbles&family=Vina+Sans&display=swap');
 
 body{
-    background-image: url();
+    background-image: url(../assets/imgs/ferrariexamen.jpg);
     /*Insteramos la imagen con la url que hayamos elegido*/
     background-size: cover;
     /*De esta forma hacemos que la imagen cubra toda la pantalla*/
@@ -13,7 +13,7 @@ body{
 
 p{
     color: rgb(104, 22, 139);
-    font-family: '';
+    font-family: 'Rubik Bubbles';
 }
 
 .container{
@@ -28,6 +28,7 @@ p{
     color: rgb(73, 202, 159);
     padding: 10px 20px;
     box-shadow: 2px 2px 2px 1px rgb(0, 0, 0, 0.5);
+    font-family: 'Rubik Bubbles';
 }
 
 .container :hover{
@@ -39,4 +40,14 @@ h2{
     justify-content: center;
     text-align: center;
     display: flex;
+    font-family: 'Rubik Bubbles';
 }
+
+@keyframes anim-fade-in-and-out {
+    0%,100% { opacity: 0 }
+    50% { opacity: 1 }
+  }
+   
+  .fade-in-and-out {
+    animation: anim-fade-in-and-out 2s infinite;
+  }
